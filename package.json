@@ -3,9 +3,14 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "static server using ssl",
-  "keywords": ["ssl", "https", "static"],
+  "keywords": [
+    "ssl",
+    "https",
+    "static"
+  ],
   "main": "index.js",
   "scripts": {
+    "start": "node cli --cert.pfx",
     "test": "mocha"
   },
   "repository": "git@github.com:jden/node-ssl-server.git",
@@ -13,5 +18,10 @@
   "readmeFilename": "README.md",
   "devDependencies": {
     "mochi": "0.1.0"
+  },
+  "dependencies": {
+    "minimist": "^0.2.0",
+    "ecstatic": "^0.5.4",
+    "morgan": "^1.2.2"
   }
 }
